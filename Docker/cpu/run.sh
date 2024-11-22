@@ -8,7 +8,7 @@ TAG="cpu"
 IMG="${REPOSITORY}:${TAG}"
 
 USER_NAME="hrc"
-REPO_NAME="labelme"
+REPO_NAME="example_labelme"
 CONTAINER_NAME="labelme-cpu"
 
 CONTAINER_ID=$(docker ps -aqf "ancestor=${IMG}")
