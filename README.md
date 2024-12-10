@@ -61,74 +61,17 @@ If you're new to Labelme, you can get started with [Labelme Starter](https://lab
 - **A compilation of valuable resources** for further exploration 🔗.
 
 
-## Installation
+## Installation && How to run
 
-There are options:
-
-- Platform agnostic installation: [Anaconda](#anaconda)
-- Platform specific installation: [Ubuntu](#ubuntu), [macOS](#macos), [Windows](#windows)
-- Pre-build binaries from [the release section](https://github.com/labelmeai/labelme/releases)
-
-### Anaconda
-
-You need install [Anaconda](https://www.continuum.io/downloads), then run below:
-
-```bash
-# python3
-conda create --name=labelme python=3
-source activate labelme
-# conda install -c conda-forge pyside2
-# conda install pyqt
-# pip install pyqt5  # pyqt5 can be installed via pip on python3
-pip install labelme
-# or you can install everything by conda command
-# conda install labelme -c conda-forge
+We have a ubuntu 20.04 docker for using labelme.  
+Now have test in ubuntu 22.04 system.
 ```
-
-### Ubuntu
-
-```bash
-sudo apt-get install labelme
-
-# or
-sudo pip3 install labelme
-
-# or install standalone executable from:
-# https://github.com/labelmeai/labelme/releases
-
-# or install from source
-pip3 install git+https://github.com/labelmeai/labelme
+cd  ~/example_labelme/
+source Docker/cpu/run.sh
+labelme
 ```
-
-### macOS
-
-```bash
-brew install pyqt  # maybe pyqt5
-pip install labelme
-
-# or install standalone executable/app from:
-# https://github.com/labelmeai/labelme/releases
-
-# or install from source
-pip3 install git+https://github.com/labelmeai/labelme
-```
-
-### Windows
-
-Install [Anaconda](https://www.continuum.io/downloads), then in an Anaconda Prompt run:
-
-```bash
-conda create --name=labelme python=3
-conda activate labelme
-pip install labelme
-
-# or install standalone executable/app from:
-# https://github.com/labelmeai/labelme/releases
-
-# or install from source
-pip3 install git+https://github.com/labelmeai/labelme
-```
-
+The labelme gui will pop out  
+Put your unlabeled data into example_labelme folder and open in labelme gui for labeling.
 
 ## Usage
 
